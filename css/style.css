@@ -186,21 +186,21 @@ section {
     padding: 20px;
 }
 
-footer {
-    height: 400px;
+/* footer {
+     height: 400px;
     background: #2980b9;
-    margin-top: 20px; 
-}
+    margin-top: 20px;
+} */
+
 ul { /* ul pour le footer */ 
     display: inline-block;
     padding: 100px;
-
 }
-li {  /* liste li pour le footer bas de page */
+ li {   /* liste li pour le footer bas de page  */
     padding: 10px;
     list-style: none;
-    color: white;
-}
+    color: black;
+} 
 
 /* fin des zones principales */
 
@@ -229,10 +229,10 @@ p {
 
 /* page sélecteurs */
 
-/* .select p {
+.select p {
     color: green;
     background: purple;
-} */
+}
 
 
 .select p:first-of-type { /* 1er enfant du type désigné */
@@ -618,8 +618,6 @@ color: #fff;
 
 #zoning5 .section .z1,.z2, .z3, .z4 p {
     line-height: 250px;
-  
-   
 }
 
 #zoning5 .z1, .z4 {
@@ -737,7 +735,7 @@ color: #fff;
     margin: auto;
     width: 80%;
     padding: 5px;
-    color: white,
+    color: black,
 }
 
 .tableau td {
@@ -763,12 +761,218 @@ color: #fff;
     color: #6495ed;
 }
 
+/* la pages des listes */
+/* la liste des fruits avec la main de spock */
+ul.fruit {
+    list-style: none;
+}
+
+ul.fruit li {
+    display: inline;
+    margin: 15px;
+}
+
+li .far {
+    font-size: 90%;
+    color: #2D5C7F;
+}
+
+li .far:hover {
+    font-size: 150%;
+    color: red;
+}
+
+.imbriquee, .imbriquee ul {
+    padding-left: 15px;
+}
+
+.imbriquee {
+    cursor: pointer;
+}
+
+.imbriquee ul {
+    display: none;
+}
+
+.europe:hover ul, .asie:hover ul {
+    display: block;
+}
+
+.imbriquee li ul li:hover {
+    font-size: 200%;
+    background: #6acafc;
+    display: inline;
+    box-shadow: 5px 10px 10px grey;
+    transition-duration: 1s; 
+}
+
+ol {
+    padding-left: 15px; 
+}
+
+/* fin liste */
+
+/* page des liens */
+/* les ancres en haut de page */
+.ancre {
+    text-align: center;
+    padding: 100px;
+}
+
+.ancre a {
+    margin: 8px;
+   padding: 5px 10px;
+   border-radius: 15px;
+   background:  #2c3e50;
+   color: white;
+   text-decoration: none;
+   font-size: 20px;
+   box-shadow: 0px 0px 10px 3px black
+}
+
+.ancre a:hover {
+    box-shadow: none;
+    transition-duration: 0.5s;
+    text-shadow: 1px 5px 10px grey;
+}
+
+/* la nav dans l'id menu  */
+
+#menu nav{
+
+    background: transparent;
+    border: none;
+ 
+ }
+ #menu ul {
+ 
+    list-style: none;
+    text-align: center;
+ 
+ }
+ #menu ul li {
+ 
+    display: inline-block;
+ 
+ }
+ #menu nav a {
+ 
+    padding: 10px;
+ 
+    color: grey;
+ 
+    text-decoration: none;
+ 
+    background: #ddd;
+ 
+    transition: 1s ease-in; /* Lent sur le début et accélère de plus en plus vers la fin. */
+ 
+ }#menu nav a:hover {
+    color: #fff;
+    background: #069;
+ 
+ }
+
+/* le menu avec les menus déroulants */
+
+#menuDeroulant {
+    height: 650px;
+}
+
+#menuDeroulant nav {
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    background: transparent;
+}
+
+#menuDeroulant nav ul li {
+    float: left;
+    list-style: none;
+    width: 20%;
+}
 
 
+#menuDeroulant ul ul {
+    display: none;
 
+}
 
+#menuDeroulant nav ul li ul li {
+    border-top: 1px solid #464646;
+    width: 100%;
+}
 
+#menuDeroulant nav li {
+    background: #ccc;
+}
 
+#menuDeroulant nav li a {
+    padding: 4px 0 4px;
+    display: block;
 
+}
 
+#menuDeroulant ul {
+    text-align: center;
 
+}
+
+#menuDeroulant nav ul.niveau1 li.sousMenu:hover ul.niveau2 {
+    display: inline;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* page formulaire */
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    background: #2D5C7F;
+    color: #d0e3fa;
+    border-radius: 20px;
+}
+
+label {
+    margin: 20px 10px;
+}
+
+textarea {
+    resize: none;
+}
+
+label[for="orange"], label[for="fraise"], label[for="kiwi"], label[for="cerise"]{
+    background: red;
+}
+
+/* la page multimédia  */
+
+.videoFond {
+    padding-left:0;
+    padding-right: 0; 
+}
+.videoFond video {
+    position: absolute;
+    width: 100%;
+    z-index: 1; /* l'empilement de z-order le 1 est plus bas que le 2 */
+}
+.videoTexte  {
+    position: relative; /* la position relative permet de décaler un élément par rapport à un autre */
+    width: 100%;
+    height: 500px;
+}
+.videoFond p {
+    position: absolute;
+    z-index: 2;
+    width: 500px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.60);
+    left : 250px;
+    top: 150px;
+    padding: 20px;
+    font-size: 120%;
+    border-radius: 15px;
+}

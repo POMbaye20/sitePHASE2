@@ -818,7 +818,6 @@ ol {
     text-align: center;
     padding: 100px;
 }
-
 .ancre a {
     margin: 8px;
    padding: 5px 10px;
@@ -829,7 +828,6 @@ ol {
    font-size: 20px;
    box-shadow: 0px 0px 10px 3px black
 }
-
 .ancre a:hover {
     box-shadow: none;
     transition-duration: 0.5s;
@@ -842,18 +840,15 @@ ol {
 
     background: transparent;
     border: none;
- 
  }
  #menu ul {
  
     list-style: none;
     text-align: center;
- 
  }
  #menu ul li {
  
     display: inline-block;
- 
  }
  #menu nav a {
  
@@ -869,8 +864,7 @@ ol {
  
  }#menu nav a:hover {
     color: #fff;
-    background: #069;
- 
+    background: #069; 
  }
 
 /* le menu avec les menus déroulants */
@@ -878,39 +872,31 @@ ol {
 #menuDeroulant {
     height: 650px;
 }
-
 #menuDeroulant nav {
     width: 90%;
     margin: 0 auto;
     border: none;
     background: transparent;
 }
-
 #menuDeroulant nav ul li {
     float: left;
     list-style: none;
     width: 20%;
 }
-
-
 #menuDeroulant ul ul {
     display: none;
 
 }
-
 #menuDeroulant nav ul li ul li {
     border-top: 1px solid #464646;
     width: 100%;
 }
-
 #menuDeroulant nav li {
     background: #ccc;
 }
-
 #menuDeroulant nav li a {
     padding: 4px 0 4px;
     display: block;
-
 }
 
 #menuDeroulant ul {
@@ -975,4 +961,82 @@ label[for="orange"], label[for="fraise"], label[for="kiwi"], label[for="cerise"]
     padding: 20px;
     font-size: 120%;
     border-radius: 15px;
+}
+
+/* pour la vidéo youtube */
+
+iframe[src="https://www.youtube.com/embed/MHYWgf3VqoY"] {
+    width: 100%;
+}
+
+/* pour l'audio */
+
+.audio {
+    text-align: center;
+}
+/* pour l'iframe */
+iframe[allowfullscreen] {
+    width: 100%;
+}
+
+.bordure {
+    border: 2px solid blue;
+    background: linear-gradient(turquoise, black);
+}
+
+/* page animations */
+
+.infoBulle {
+    height: 250px;
+    width: 500px;
+    margin: auto;
+    padding-top: 15px;
+    background: #444;
+    box-shadow: 0 0 50px #222 inset;
+}
+.infoBulle p {
+    text-align: center;
+    padding-top: 30px; 
+}
+.infoBulle a {
+    color: #ccc;
+    text-decoration: none; /* pour enlever le soulignement sur le a */
+    border-radius: 3px;
+    padding: 5px 15px;
+    text-shadow: 0 -2px 0 black;
+}
+
+.infoBulle a:hover {
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0 1px 2px black;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.infoBulle a span {
+    position: absolute;
+    padding: 15px;
+    margin-top: 23px;
+    margin-left: -35px;
+    background: rgba(0, 0, 0, .9);
+    /* le contenu de span disparâît grâce à cette ligne */ 
+    color: #09c;
+    transition: .25s;
+    /* la mise à tranform: scale(0) fait disparaître aussi */
+    transform: scale(0) rotateZ(-12deg);
+    border-radius: 15px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+}
+.infoBulle a:hover span {
+    opacity: 1;
+    transform: scale(1) rotateZ(0);
+}
+.infoBulle a span:before {
+    /* content: ''; */
+    position: absolute;
+    top: -6px;
+    left: -10px;
+    border-bottom: 6px solid rgba(0,0,0,.9);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
 }

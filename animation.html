@@ -7,8 +7,10 @@
     <!-- les typos google font anton lemonada oswald -->
     <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada:300,400|Oswald:300,400" rel="stylesheet"> 
     <!-- font awesome pour les logos -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <title>Site PHASE 2 - multimedia</title>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
+    <!-- font awesome en local -->
+    <link rel="stylesheet" href="css/fontawesome-all.css" rel="stylesheet">
+    <title>Site PHASE 2 - animation</title>
     <!-- la description qui s'affiche sur un résultat de recherche google -->
     <meta name="description" content="Site de la phase 2 Papaoumar Mbaye 2018/2019">
     <!-- les mots clefs utiles pour les moteurs de recherches -->
@@ -19,6 +21,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    
    
         <header>
             <div id="logo">
@@ -54,61 +58,32 @@
                 <a href="liste.html" title="Liste">Liste</a>
                 <a href="lien_menu.html" title="Lien">Lien</a>
                 <a href="formulaire.html" title="Formulaire">Formulaire</a>
-                <a href="multimedia.html" title="Multimédia" class="active">Multimédia</a>
-                <a href="animation.html" title="Animation">Animation</a>
+                <a href="multimedia.html" title="Multimédia">Multimédia</a>
+                <a href="animation.html" title="Animation" class="active">Animation</a>
           </div>   
         </nav>
 
-        <main><!-- Début main -->
-            <h2>Multimedia <i class="fas fa-video"></i></h2>
-
-            <section class="videoFond">
-                <h3>Une vidéo en fond</h3>
-                <div class="videoTexte">
-                    <video autoplay loop>
-                        <source src="video/videoBackground.mp4" type="video/mp4"><!-- le fichier pour mettre la vidéo -->
-                    </video>
-                    <p>Une vidéo en noir et blanc</p>
-                </div>
-            </section>
-<hr>
-            <section>
-                <h3>Vidéo Youtube</h3>
-                <iframe height="400" src="https://www.youtube.com/embed/MHYWgf3VqoY" allowfullscreen></iframe>
-            </section>
-<hr>
-            <section class="audio">
-                <h3>Audio <i class="fas fa-volume-up"></i></h3>
-                <h4>Format mp3</h4>
-                <br>
-                <audio src="audio/son.mp3" controls></audio>
-                <hr>
-                <h4>Format Ogg</h4>
-                <br>
-                <!-- <audio src="audio/son.ogg" controls></audio> -->
-            </section>
-            <section>
-                <h3>Google Map</h3>
-                <h4>Office du tourisme Aurillac</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2824.797162839101!2d2.4415528155395543!3d44.92746027909831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ad5599d649806d%3A0xf52163a23d5a8273!2sOffice+de+tourisme+du+Pays+d&#39;Aurillac!5e0!3m2!1sfr!2sfr!4v1528962472597" width="600" height="450" style="border:0" allowfullscreen></iframe>
-                <br>
-            </section>
-            <section class="bordure">
-                <h3>Real Madrid <i class="far fa-futbol"></i><i class="fas fa-trophy"></i></h3>
-                <iframe src="https://www.realmadrid.com/fr" height="450px" width="100%"></iframe>
+        <main><!-- Contenu principal-->
+           <h2>Animation en CSS</h2>
+           <section>
+               <h3>Infobulles - <i class="fas fa-comment-alt"></i></h3>
+                <div class="infoBulle">
+                    <p>
+                        <a href="#">Passez la souris ! <i class="fas fa-comment-alt"></i><span>Coucou ; je suis une pop-up</span></a>
+                    </p>
+                    <p>
+                        <a href="#">Ici aussi.... <i class="fas fa-comment-alt"></i><span>Et moi aussi je suis une pop-up !!</span></a>
+                    </p>
+                    <p>
+                        <a href="#">Une fois encore, allez ! <i class="fas fa-comment-alt"></i><span>Et moi je suis la benjamine ;-)</span></a>
+                    </p>                  
+                </div>        
             </section>
 
-            <section>
-                <h3>Audio oiseau <i class="fas fa-volume-up"></i><i class="fas fa-crow"></i></h3>
-                <audio src="audio/sf_ambi_oiseaux_campagne_01.mp3" controls></audio>
-            </section>
-       
 
-            
-                        
         </main><!-- fin main -->
     <footer>
-       <!-- pied de page -->
+        <!-- pied de page -->
     </footer>
 
 </body>

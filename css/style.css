@@ -180,14 +180,24 @@ main {
 aside {
     height: 250px;
     background: #a6d6c3;
+    /* width: 30%; */
 }
+.surlagauche {
+    float: left;
+    width: 30%;
+}
+.surladroite {
+    float: right;
+}
+
 section {
-    margin-top: 50px;
+    margin-top: 70px;
     padding: 20px;
+    width: 80%;
 }
 
 footer {
-     height: 400px;
+     /* height: 400px; */
     background: #2980b9;
     margin-top: 20px;
 }
@@ -574,7 +584,7 @@ color: #fff;
 
 #zoning4 section {
     height: 500px;
-    margin: 20px;
+    margin: 10px auto;
     background:hotpink;
     padding: 0;
 }
@@ -608,6 +618,7 @@ color: #fff;
     background: #176D81;
     margin: 20px;
     padding: 0;
+    margin: 10px auto;
 }
 
 #zoning5 .section .z1,.z2, .z3, .z4 {
@@ -950,6 +961,7 @@ label[for="orange"], label[for="fraise"], label[for="kiwi"], label[for="cerise"]
     width: 100%;
     height: 500px;
 }
+
 .videoFond p {
     position: absolute;
     z-index: 2;
@@ -1127,6 +1139,7 @@ iframe[allowfullscreen] {
     top: 30px;
     left: 142px;
 }
+
 #menuRotate dl {
     position: relative;
     top: 0;
@@ -1137,21 +1150,24 @@ iframe[allowfullscreen] {
     color: #09c;
     text-align: center;
     background: #333;
-    border-radius: 0 0 6px rgba (0,0,0,0.7);
+    border-radius: 0 0 6px rgba(0,0,0,0.7);
     transform-origin: 50% 120px;
-    animation: bonceOut 0.7s ease-in-out;
+    animation: bounceOut 0.7s ease-in-out;
 }
-#menuRotate dt {
+
+#menuRotate dt{
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 23px;
     padding-top: 5px;
 }
+
 #menuRotate dd {
     /* color: white; */
     transform: rotate(180deg);
 }
+
 #menuRotate dd a {
     color: white;
     display: block;
@@ -1159,10 +1175,30 @@ iframe[allowfullscreen] {
     height: 24px;
     padding: 3px 0;
 }
+
 #menuRotate dd a:hover {
     background: rgba(255, 255, 255, 0.1);
 }
+
 #menuRotate dl:hover {
      transform: rotate(-180deg);
-     animation: bounceIn 3s ease-in-out;
+     animation: bounceIn 0.7s ease-in-out;
 }
+
+/* La règle @ @keyframes permet aux auteurs de définir les étapes qui composent la séquence d'une animation CSS. */
+
+@keyframes bounceIn {
+    from {transform: rotate(0deg);}
+    75% {transform: rotate(-200deg);}
+    90% {transform: rotate(-175deg);}
+    to {transform: rotate(-180deg);}
+}
+
+@keyframes bounceOut {
+    from {transform: rotate(0deg);}
+    0% {transform: rotate(-180deg);}
+    10% {transform: rotate(-165deg);}
+    to {transform: rotate(-360deg);}
+}
+
+/* FIN - THE END */

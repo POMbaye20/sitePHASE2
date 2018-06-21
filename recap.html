@@ -49,9 +49,9 @@
                     <li>float: effet flottant</li>
                         <ul>
                             <li>Voici quelques exemples de float : </li>
-                            <li>float : right; : pour le faire flotter à droite</li>
-                            <li>float : left; : pour le faire flotter à gauche</li>
-                            <li>float : inherit; :</li>
+                            <li class="adroite">float : right; : pour le faire flotter à droite</li>
+                            <li class="agauche">float : left; : pour le faire flotter à gauche</li><br>
+                            <li>float : inherit; :</li><br>
                             <li>float : none; : il ne flotte pas</li>
                         </ul>
                     <li>font-family: police</li>
@@ -63,13 +63,30 @@
                         <ul class="size">
                             <li>Ici, on pourra définir la taille de la police. exemple: ici, font-size : 30px;</li>
                         </ul>
-                    <li>height: hauteur de l'élément</li>
+                    <li>height: hauteur de l'élément (ou de bloc) : permet de définir une hauteur à un élément <strong>exemple : height : 30px;</strong></li>
                     <li>left: position à partir de la gauche de la fenêtre</li>
-                    <li>line-height: hauteur de l'interligne</li>
+                    <ul>
+                        <li>Left sera pour mettre un espace entre le bloc du coté gauche de l'écran ou de la fenêtre exemple: left : 50px; le décale vers la droite</li>
+                    </ul>
+                    <li>line-height: hauteur de l'interligne : définit un espace entre les lignes ou entre 2 paragraphes exemple : line-height : 300px;</li>
+                    <ul>
+                        <em><li>Mais peut aussi se rédiger en % ou en em</li></em>
+                    </ul>
                     <li>margin: marges extérieures</li>
+                    <ul>
+                      <strong><li>Exemple : margin : 0 auto; placera l'élément au centre du conteneur</li></strong>
+                    </ul>
                     <li>padding: marges intérieures</li>
+                    <ul>
+                        <li>Exemple : padding : 10px; rajoute  vraiment une marge à l'élément à l'intérieur d'un bloc. Peut également être en pourcentage</li>
+                    </ul>
                     <li>position: position de l'élément dans la page (on n'a utilisé que la valeur (fixed) pour l'instant)</li>
-                    <li>text-align: alignement du texte</li>
+                    <li>text-align: alignement du texte : permet d'orienter le texte à un endroit précis</li>
+                    <ul>Exemple : 
+                        <li>text align : center;</li>
+                        <li>text align : right;</li>
+                        <li>text align : left;</li>
+                    </ul>
                     <li>text-decoration: changement des valeurs héritées (ici le souligné qui est standard pour les liens sous tous les navigateurs est supprimé)</li>
                     <li>top: position à partir du haut de la fenêtre</li>
                     <li>transition: temps de transition lors d'une animation (ici sur les liens de la barre de menus)</li>
@@ -117,4 +134,5 @@
     </section>
 
 </body>
+<script src="js/recap.js"></script>
 </html>

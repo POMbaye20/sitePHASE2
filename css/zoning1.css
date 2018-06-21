@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+body {
+    background: plum;
+    
+}
+/* Div container */
+#container {
+    background: green;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Header */
+header {
+    height: 250px;
+    background: lightgoldenrodyellow;
+}
+/* Aside */
+aside {
+    width: 200px;
+    background: lightgreen;
+    height: 600px;
+    float: left;
+}
+/* Début section */
+section {
+    width: 1000px;
+    height: 600px;
+    background: grey;
+    float: left;
+}
+.clear {
+    clear: both;
+}
+/* Fin zoning 1 */

@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+body {
+    background: green;
+}
+#container {
+    width: 1200px;
+    background: skyblue;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+header {
+    background: purple;
+    height: 90px;
+}
+
+nav {
+    background: plum;
+    height: 40px;
+}
+
+.noir {
+    background: black;
+    height: 10px;
+}
+.quatresection {
+    background: red;
+    height: 510px;
+    padding: 10px;
+}
+
+.zone {
+    float: left;
+    width: 50%;
+    height: 250px;
+
+}
+
+.un, .quatre {
+    background: rgb(29, 209, 29);
+}
+
+.deux, .trois {
+    background: cyan;
+}
+
+.clear {
+    clear: both;
+}
+
+.grey {
+    background: grey;
+    height: 10px;
+}
+
+footer {
+    background: bisque;
+    height: 90px;
+}

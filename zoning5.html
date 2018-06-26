@@ -5,39 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Zoning 5</title>
-    <link rel="stylesheet" href="css/zoning5.css">
+    <link rel="stylesheet" href="css/zoning5.css"><!-- Son CSS, sa feuille de style -->
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    
 </head>
 <body>
     <main><!-- Début de main -->
         <div class="navbar"><!-- début navbar -->
-         <div class="navbargauche">
-             <a href="#">BIENVENUE</a>
-        </div>
+
+            <div class="navbargauche">
+                <a href="zoning5.html">BIENVENUE</a>
+            </div>
         
-           <div class="navbardroite">
-                <a href="#">ZONE ORANGE</a>
-                <a href="#">ZONE VILOETTE</a>
-                <a href="#">ZONE ROUGE</a>
-           </div>
+            <div class="navbardroite">
+                    <a href="#">ZONE ORANGE</a>
+                    <a href="#">ZONE VILOETTE</a>
+                    <a href="#">ZONE ROUGE</a>
+            </div>
         </div><!-- fin navbar -->
 
-        <div class="clear"></div>
+        <div class="clear"></div><!-- Pour reprendre son flux normal -->
 
         <div id="container"><!-- Début de container -->
-           <div class="orange">
-                <section>
-                    <h2>Titre de la zone orange</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veritatis maxime quisquam quibusdam, ab et fugiat dolorum magni inventore reprehenderit, voluptate assumenda ullam obcaecati id quas quam dolorem! Temporibus, architecto.</p>
-                </section>
-           </div>
-            <section>
+           
+              <div class="content"><!-- Début div content -->
+                   <div class="orange">
+                        <section>
+                            <h2>Titre de la zone orange</h2><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In delectus aspernatur, optio aliquid tenetur neque. Maxime corrupti nemo aspernatur ex. Mollitia illum, in atque similique minus delectus odit vero doloremque!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quidem necessitatibus dolores facere officiis, nemo reiciendis harum voluptatum. Illum nemo accusantium voluptate omnis ipsam nihil tenetur, aspernatur deleniti. Amet, sint!</p>
+                            <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quod harum, adipisci, perferendis culpa aut, nostrum rem reiciendis recusandae tempore nulla facere blanditiis assumenda corrupti similique laborum ab consequuntur. Nobis!</p>
+                        </section>
+                   </div>
+                   <div class="clear"></div>
+                   
+                   <div class="violette"><!-- Début class violette -->
+                       <section>
+                            <h2>Titre de la zone violette</h2><br>
+                           <figure>
+                               <img src="img/philharmonie01.png " alt="La Philharmonie de Paris" width="300px" height="300px">
+                               <figcaption>La Philharmonie de Paris</figcaption>
+                            </figure>
+                           <div class="clear"></div>
+                        </section>
+               </div><!-- Fin class violette -->
 
-            </section>
-            <section>
+               <div class="clear"></div>
+        
+                    <div class="rouge"><!-- Début class rouge -->
+                        <section>
+                            <h2>Titre de la zone rouge</h2>
+                           <figure>
+                               <img src="img/zoning.jpg" class="zoning" alt="Zoning" width="300px" height="250px">
+                               <figcaption>Mise en abime</figcaption>
+                            </figure>                          
+                            <p class="texte">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde temporibus placeat ipsam quas alias eum, amet dolores incidunt aspernatur, officiis ea pariatur impedit fugiat corporis sit? Tenetur aliquid commodi illo.</p>
+                        </section>
+                    </div><!-- Fin class rouge -->
 
-            </section>
+              </div> <!-- Fin div content -->
+
+                            <!-- ******************* FORMULAIRE ******************* -->
+
+                <div class="formulaire"><!-- Début Div formulaire -->
+                  
+                        <h1>Un formulaire <i class="fab fa-wpforms"></i> <i class="far fa-smile"></i></h1>
+                        <form method="POST" action="inscrpition.php" enctype="multipart/form-data"><!-- début de form -->
+                            <p>Vos coordonnées<i class="far fa-address-card"></i></p>
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name"><br>
+                            <label for="prenom">Prénom</label>
+                            <input type="text" id="prenom" name="prenom"><br>
+
+                            <label for="email">Votre courriel <i class="fas fa-at"></i></label>
+                            <input type="email" id="email" name="email"><br>
+                            <label for="password">Mot de passe <i class="fas fa-key"></i></label>
+                            <input type="password" id="password" name="password">
+
+                            <button type="reset">Effacer <i class="fas fa-backspace"></i></button>                         
+                            <hr>
+                            <!-- Championnats foot -->
+                            <h3>Football <i class="fas fa-futbol"></i></h3>
+                        <p>Quels championnats regardez-vous ?</p>
+                            <label for="Ligue 1 Conforama">Ligue 1 Conforama<i class="far fa-flag"></i></label>
+                            <input type="checkbox" id="Ligue 1 Conforama" value="Ligue 1 Conforama">
+                            <label for="Premier League">Premier League</label>
+                            <input type="checkbox" id="Premier League" value="Premier League">
+                            <label for="Liga Santander">Liga Santander</label>
+                            <input type="checkbox" id="liga Santander" value="liga Santander">
+                            <label for="Serie A">Série A</label>
+                            <input type="checkbox" id="serie a" value="serie a">
+                            <label for="Bundesliga">Bundesliga</label>
+                            <input type="checkbox" id="bundesliga" value="bundesliga">
+                            <label for="mls">MLS</label>
+                            <input type="checkbox" id="mls" value="mls">
+                            <label for="Primera División">Primera División</label>
+                            <input type="checkbox" id="Primera División" value="Primera División">
+
+                            <p>Quel est le meilleur joueur du monde ?</p>
+                            <label for="cristiano">Cristiano Ronaldo</label>
+                            <input type="radio">
+                            <label for="lionel messi">Lionel Messi</label>
+                            <input type="radio">
+
+                            <hr>
+
+                        <h3>Vos séries préférées <i class="fas fa-tv"></i></h3>
+                            <p>Quelles séries regardez-vous ?</p>
+
+                            <label for="game of thrones">Game of Thrones</label>
+                            <input type="checkbox" id="gameofthrones" value="gameofthrones">
+                            <label for="Vikings">Vikings</label>
+                            <input type="checkbox" id="Vikings" value="Vikings">
+                            <label for="Stranger Things">Stranger Things</label>
+                            <input type="checkbox" id="stranger things" value="stranger things">
+                            <label for="murder">How to get away with murder</label>
+                            <input type="checkbox" id="murder" value="murder">
+                            <label for="la casa de papel">La casa de papel</label>
+                            <input type="checkbox" id="la casa de papel" value="la casa de papel">
+                            <label for="breaking bad">Breaking Bad</label>
+                            <input type="checkbox" id="breaking bad" value="breaking bad">
+                            <label for="gotham">Gotham</label>
+                            <input type="checkbox" id="gotham" value="gotham">
+                            <label for="13 reasons why">13 reasons why</label>
+                            <input type="checkbox" id="13 reasons why" value="13 reasons why">
+                            <label for="sevenseconds">Seven Seconds</label>
+                            <input type="checkbox" id="sevenseconds" value="sevenseconds">
+                            <label for="Malcolm">Malcolm</label>
+                            <input type="checkbox" id="malcolm" value="malcolm"><br>
+                            <br>
+                          <label for="serie">Quelle est la meilleure série pour vous <i class="fas fa-trophy"></i></label>
+                           <select name="serie" id="serie"><!-- Select pour séries -->
+                                <option value="gameofthrones">Game of Thrones</option>
+                                <option value="Vikings">Vikings</option>
+                                <option value="stranger things">Stranger Things</option>
+                                <option value="murder">How to get away with murder</option>
+                                <option value="la casa de papel">La casa de papel</option>
+                                <option value="breaking">Breaking Bad</option>
+                                <option value="gotham">Gotham</option>
+                                <option value="13 reasons why">13 reasons why</option>
+                                <option value="sevenseconds">Seven Seconds</option>
+                                <option value="malcolm">Malcolm</option>
+                            </select><!-- Fin select pour séries -->
+
+                            <button type="submit">Envoyez</button><!-- Boutton d'envoi -->
+                        </form><!-- fin de form -->
+                </div><!-- Fin de la div formulaire -->
+
         </div><!-- Fin de la div container -->
     </main><!-- Fin de main -->
-    
+
+        <footer>JUIN 2018</footer><!-- Le pied de page  -->
+        <!-- Fin du ZONING 5 !!!! -->
 </body>
 </html>

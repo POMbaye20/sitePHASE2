@@ -108,6 +108,11 @@ table {
     margin-top: 20px;
 }
 
+.philharmonie {
+    width: 300px;
+    height:300px;
+}
+
 /* FIGURE */
 
 figure {
@@ -131,6 +136,12 @@ figcaption {
     background: red;
     margin-top: 20px;
     padding-top: 10px;
+}
+
+/* pour la photo du zoning */
+.abime {
+    width:300px; 
+    height:250px;
 }
 /* La classe pour le lorem */
 .texte {
